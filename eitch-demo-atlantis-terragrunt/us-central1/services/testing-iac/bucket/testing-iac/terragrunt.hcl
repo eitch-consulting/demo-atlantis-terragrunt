@@ -14,8 +14,8 @@ locals {
 
 inputs = {
   name       = "${local.project_vars.project_id}-testing-iac"
-  project_id = local.project_id
-  location   = local.region
+  project_id = local.project_vars.project_id
+  location   = local.region_vars.region
 
   storage_class = "REGIONAL"
   versioning    = false
