@@ -4,6 +4,7 @@ repos:
     workflow: terragrunt
     branch: /^main$/
     delete_source_branch_on_merge: true
+    allowed_overrides: [plan_requirements, apply_requirements, import_requirements]
     apply_requirements:
       - approved
       - mergeable

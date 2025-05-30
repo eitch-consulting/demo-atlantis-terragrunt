@@ -32,7 +32,7 @@ inputs = {
   service_name = "atlantis"
   project_id   = local.project_vars.project_id
   location     = local.region_vars.location
-  image        = "us-central1-docker.pkg.dev/eitch-demo-atlantis-terragrunt/demo/atlantis-terragrunt:latest"
+  image        = "us-central1-docker.pkg.dev/eitch-demo-atlantis-terragrunt/demo/atlantis-terragrunt:0.34.0-2"
 
   #image = "us-docker.pkg.dev/cloudrun/container/hello"
 
@@ -100,15 +100,6 @@ inputs = {
       }]
     },
     {
-      name = "ATLANTIS_GH_TOKEN"
-      value_from = [{
-        secret_key_ref = {
-          key  = "latest"
-          name = "ATLANTIS_GH_TOKEN"
-        }
-      }]
-    },
-    {
       name = "ATLANTIS_GH_WEBHOOK_SECRET"
       value_from = [{
         secret_key_ref = {
@@ -135,15 +126,11 @@ inputs = {
     },
     {
       name  = "ATLANTIS_GH_APP_ID"
-      value = "1343658"
+      value = "1344485"
     },
     {
-      name  = "ATLANTIS_GH_APP_SLUG"
-      value = "eitch-demo-atlantis-terragrunt"
-    },
-    {
-      name  = "ATLANTIS_GH_USER"
-      value = "eitch-demo-atlantis-terragrunt"
+      name  = "ATLANTIS_GH_ORG"
+      value = "eitch-consulting"
     },
     {
       name  = "ATLANTIS_REPO_ALLOWLIST"
@@ -182,8 +169,12 @@ inputs = {
       value = "true"
     },
     {
-      name  = "TERRAGRUNT_PROVIDER_CACHE"
-      value = "1"
+      name  = "ATLANTIS_WRITE_GIT_CREDS"
+      value = "true"
+    },
+    {
+      name  = "TG_PROVIDER_CACHE"
+      value = "true"
     },
     {
       name  = "TF_PLUGIN_CACHE_MAY_BREAK_DEPENDENCY_LOCK_FILE"
