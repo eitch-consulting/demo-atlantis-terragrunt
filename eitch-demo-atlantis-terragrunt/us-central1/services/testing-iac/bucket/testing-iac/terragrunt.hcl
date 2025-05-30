@@ -1,7 +1,7 @@
-#terraform {
-#  source = "tfr:///terraform-google-modules/cloud-storage/google//modules/simple_bucket?version=10.0.2"
-#}
-#
+terraform {
+  source = "tfr:///terraform-google-modules/cloud-storage/google//modules/simple_bucket?version=10.0.2"
+}
+
 #include "root" {
 #  path = find_in_parent_folders("root.hcl")
 #}
