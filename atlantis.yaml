@@ -1,6 +1,6 @@
 version: 3
 projects:
 - dir: .
-  plan_requirements: [mergeable]
+  plan_requirements: []
   apply_requirements: [mergeable]
   import_requirements: [mergeable]
