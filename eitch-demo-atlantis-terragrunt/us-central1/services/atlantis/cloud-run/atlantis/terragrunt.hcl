@@ -133,6 +133,10 @@ inputs = {
       value = "eitch-consulting"
     },
     {
+      name  = "ATLANTIS_GH_ALLOW_MERGEABLE_BYPASS_APPLY"
+      value = "true"
+    },
+    {
       name  = "ATLANTIS_REPO_ALLOWLIST"
       value = "github.com/eitch-consulting/demo-atlantis-terragrunt"
     },

@@ -1,4 +1,10 @@
 version: 3
+autodiscover:
+  mode: "enabled"
+  ignore_paths:
+  - images/*
+  - scripts/*
+
 projects:
 - dir: .
   plan_requirements: []
