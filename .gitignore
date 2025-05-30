@@ -1,0 +1,13 @@
+*.tfstate.*
+crash.log
+terraform.tfvars
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+kubeconfig
+*.tfplan
+.terraform.lock.hcl
+**/.terragrunt-cache
+*.swp
+*.key

@@ -1,0 +1,4 @@
+[tools]
+terraform = '1.12.1'
+terragrunt = '0.80.4'
+shellcheck = '0.10.0'

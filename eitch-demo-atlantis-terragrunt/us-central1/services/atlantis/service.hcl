@@ -1,0 +1,1 @@
+../../..//_global/services/atlantis/service.hcl
