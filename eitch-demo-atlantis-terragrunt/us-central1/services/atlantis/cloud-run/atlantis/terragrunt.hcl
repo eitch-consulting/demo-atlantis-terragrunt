@@ -32,7 +32,7 @@ inputs = {
   service_name = "atlantis"
   project_id   = local.project_vars.project_id
   location     = local.region_vars.location
-  image        = "us-central1-docker.pkg.dev/eitch-demo-atlantis-terragrunt/demo/atlantis-terragrunt:0.34.0-2"
+  image        = "us-central1-docker.pkg.dev/eitch-demo-atlantis-terragrunt/demo/atlantis-terragrunt:0.34.0-3"
 
   #image = "us-docker.pkg.dev/cloudrun/container/hello"
 

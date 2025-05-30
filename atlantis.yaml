@@ -4,9 +4,4 @@ autodiscover:
   ignore_paths:
   - images/*
   - scripts/*
-
-projects:
-- dir: .
-  plan_requirements: []
-  apply_requirements: [mergeable]
-  import_requirements: [mergeable]
+  - modules/*
