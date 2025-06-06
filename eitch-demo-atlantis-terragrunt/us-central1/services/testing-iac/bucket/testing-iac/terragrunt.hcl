@@ -13,7 +13,7 @@ locals {
 }
 
 inputs = {
-  name       = "${local.project_vars.project_id}-testing-iac"
+  name       = "${local.project_vars.project_id}-testing-iac-20250606"
   project_id = local.project_vars.project_id
   location   = local.region_vars.region
 
